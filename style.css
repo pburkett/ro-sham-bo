@@ -1,0 +1,24 @@
+header {
+    height: 20vh;
+}
+#main-row{
+    height: 60vh;
+}
+footer {
+    height: 20vh
+}
+.cus-btn {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    font-size: 50pt;
+    font-weight: 700;
+}
+
+.computer-pressed-btn {
+    box-shadow: inset 0px 0px 30px 10px rgba(10,10,200,.5);
+    
+}
+.player-pressed-btn {
+    box-shadow: inset 0px 0px 30px 10px rgba(20,200,10,.5);
+}
