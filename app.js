@@ -61,7 +61,7 @@ function drawButtons(mode) {
         buttons +=
 
             `
-    <div class="col-2 flex-box bg-secondary" id="${(gameMode['names'][buttonName])}-div">
+    <div class="col-lg-4 col-xs-7 mt-5  flex-box bg-secondary" id="${(gameMode['names'][buttonName])}-div">
         <button type="button" class="cus-btn" id="${(gameMode['names'][buttonName])}" onclick="play(${(gameMode['names'][buttonName])})">${buttonName}</button>
     </div>
     `

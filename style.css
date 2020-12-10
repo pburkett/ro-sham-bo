@@ -2,7 +2,7 @@ header {
     height: 30vh;
 }
 #main-row{
-    height: 60vh;
+    min-height: 60vh;
 }
 footer {
     height: 10vh
