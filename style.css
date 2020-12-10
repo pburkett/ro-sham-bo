@@ -1,11 +1,11 @@
 header {
-    height: 20vh;
+    height: 30vh;
 }
 #main-row{
     height: 60vh;
 }
 footer {
-    height: 20vh
+    height: 10vh
 }
 .cus-btn {
     cursor: pointer;
@@ -13,12 +13,15 @@ footer {
     width: 100%;
     font-size: 50pt;
     font-weight: 700;
+    
 }
-
 .computer-pressed-btn {
     box-shadow: inset 0px 0px 30px 10px rgba(10,10,200,.5);
-    
+    transform: scale(1.1);
+    transition: 800ms;
 }
 .player-pressed-btn {
     box-shadow: inset 0px 0px 30px 10px rgba(20,200,10,.5);
+    transform: scale(1.1);
+    transition: 800ms;
 }
