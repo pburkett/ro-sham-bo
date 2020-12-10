@@ -61,7 +61,7 @@ function drawButtons(mode) {
         buttons +=
 
             `
-    <div class="col-lg-4 col-xs-7 mt-5  flex-box bg-secondary" id="${(gameMode['names'][buttonName])}-div">
+    <div class="col-lg-4 col-xs-7 mt-3 mx-2 flex-box bg-secondary" id="${(gameMode['names'][buttonName])}-div">
         <button type="button" class="cus-btn" id="${(gameMode['names'][buttonName])}" onclick="play(${(gameMode['names'][buttonName])})">${buttonName}</button>
     </div>
     `
@@ -88,9 +88,10 @@ function play(playerChoice) {
     console.log(gameMode, 'from within Play()');
     outcome = victor(playerChoice, computerChoice(gameMode), gameMode)
     setTimeout(() => {
+        if (int == playerChoice) {
+            document.getElementById(int).classList.add("split-pressed-btn")
 
-
-        console.log(outcome, 'yea buddy')
+        }
         document.getElementById(int).classList.add("computer-pressed-btn")
     }, 500);
 

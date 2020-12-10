@@ -1,9 +1,13 @@
 header {
     height: 30vh;
 }
+
+@media screen and (min-width: 992px) {
 #main-row{
-    min-height: 60vh;
+    height: 60vh;
 }
+}
+
 footer {
     height: 10vh
 }
@@ -16,12 +20,16 @@ footer {
     
 }
 .computer-pressed-btn {
-    box-shadow: inset 0px 0px 30px 10px rgba(10,10,200,.5);
+    box-shadow: inset 0px 0px 30px 10px rgba(10,10,200,.8);
+    transform: scale(1.1);
+    transition: 400ms;
+}
+.player-pressed-btn {
+    box-shadow: inset 0px 0px 30px 10px rgba(20,200,10,.8);
     transform: scale(1.1);
     transition: 800ms;
 }
-.player-pressed-btn {
-    box-shadow: inset 0px 0px 30px 10px rgba(20,200,10,.5);
-    transform: scale(1.1);
-    transition: 800ms;
+.split-pressed-btn {
+    box-shadow: inset 15px 15px 15px 10px rgba(20,200,10,.8),
+                inset -15px -15px 15px 10px rgba(10,10,200,.8) !important;
 }
